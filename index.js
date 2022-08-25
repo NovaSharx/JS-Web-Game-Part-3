@@ -42,9 +42,6 @@ move(newItem('assets/staff.png')).to(600, 250)
 
 function newInventory(){
     let inventory = document.createElement('div')
-    inventory.style.position = 'fixed'
-    inventory.style.bottom = '0px';
-    inventory.style.left = '0px'
     inventory.style.width = '100%'
     inventory.style.height = '100px'
     inventory.style.display = 'flex'
@@ -58,3 +55,4 @@ function newInventory(){
 }
 
 const inventory = newInventory()
+move(inventory).to(0,0)
